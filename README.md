@@ -3,6 +3,8 @@ Shows some simple objects that can be used in kubernetes deployments
 
 For simplicity I will use only `default` namespace
 
+Also, I don't use helm charts on purpose. This way the repo demonstrates how to utilize some basic linux commands.
+
 ## Getting starated
 
 Set proper values to `dockerconfig.json`
