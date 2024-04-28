@@ -7,3 +7,7 @@ For simplicity I will:
 - use only default namespace
 
 See `apply.sh` file to see how apply specific objects
+
+## Cheat sheet
+
+Check current context `kubectl config current-context`
