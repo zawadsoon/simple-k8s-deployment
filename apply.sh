@@ -18,5 +18,8 @@ cat docker-config-json-secret.yaml \
     | sed s/{{DOCKER_CONFIG_JSON_BASE_64}}/$DOCKER_CONFIG_JSON_BASE_64/g \
     # | kubectl apply -f - # Uncomment this line to apply the object
 
+# or alternatively use follwing command to apply docker config right away:
+# kubectl create secret generic regcred --from-file=.dockerconfigjson=dockerconfig.json --type=kubernetes.io/dockerconfigjson
+
 # Type `kubectl delete secret regcred` to delete the secret
 echo "\n" 
